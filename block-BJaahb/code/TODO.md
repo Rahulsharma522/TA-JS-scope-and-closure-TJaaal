@@ -12,7 +12,7 @@ function outer() {
 let getSum = outer();
 let num = getSum();
 ```
-![alt text](./)
+![alt text](./ )
 
 2.
 
