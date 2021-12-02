@@ -28,6 +28,7 @@ counter.value(); // output
 counter.decrement(); // output
 counter.value(); // output
 ```
+![Test Image 3](code/img.png)
 
 2. Create the execution context diagram and write the output.
 
