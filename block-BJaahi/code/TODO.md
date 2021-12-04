@@ -65,6 +65,17 @@ var nextMessage = sayHello('Test');
 
 ```js
 // Your code goes here
+
+var username = undefined;
+let number ;
+function sayHello(name) {
+  return `Hello ${name}`;
+}
+let message;
+var nextMessage = undefined;
+
+//Execution phase
+error : number is not defined
 ```
 
 3.
@@ -86,6 +97,14 @@ var nextMessage = sayHello('Test');
 
 ```js
 // Your code goes here
+
+let username;
+let number;
+let sayHello;
+let message;
+var nextMessage = undefined;
+//Execution Phase
+Error: username is not defined
 ```
 
 4.
@@ -108,6 +127,15 @@ var nextMessage = sayHello('Test');
 
 ```js
 // Your code goes here
+
+let username;
+let number;
+let message;
+let sayHello;
+var nextMessage = undefined;
+//Execution Phase
+let username = "Arya"
+Error : number is not defined
 ```
 
 5.
@@ -123,6 +151,12 @@ let age = 21;
 
 ```js
 // Your code goes here
+//Declration Phase
+var name = undefined;
+let age;
+// Excution Phase
+undefined
+Error : age is not defined
 ```
 
 6.
@@ -142,6 +176,14 @@ sayHi();
 
 ```js
 // Your code goes here
+
+//Declaration Phase
+var name = undefined;
+let age;
+//Excution
+function sayHi(){}
+undefined
+Error : cannot be access before initialazation
 ```
 
 7.
@@ -160,6 +202,13 @@ function sayHi(name) {
 
 ```js
 // Your code goes here
+
+var name = undefined;
+let age;
+//Excution
+function sayHi(){}
+undefined
+Error : cannot be access before initialazation
 ```
 
 8.
@@ -178,6 +227,13 @@ let sayHi = function sayHi(name) {
 
 ```js
 // Your code goes here
+
+//Declaration Phase
+let sayHi;
+var name = undefined;
+let age
+//Execution Phase
+Error: sayHi is not defined
 ```
 
 9.
@@ -193,6 +249,15 @@ let num2 = 30;
 
 ```js
 // Your code goes here
+
+//Declaraation 
+let num1;
+var sum = undefined;
+let num2;
+//declaration phase
+let num1 = 21;
+undefined;
+Error : num2 is not defined
 ```
 
 10.
@@ -217,6 +282,19 @@ let sum = add(num1, num2, 4, 5, 6);
 
 ```js
 // Your code goes here
+
+//Declation phase
+var num1 = undefined;
+let sum2 ;
+let add;
+function addAgian(a, b) {
+  return a + b;
+}
+let num2;
+let sum;
+//Execution phase
+var num1 = 21;
+let sum2 = addAgain(num1,num2,4,5,6);
 ```
 
 11.
@@ -238,6 +316,18 @@ let add = (a, b) => {
 
 ```js
 // Your code goes here
+
+// declaration Phase
+let sum;
+let add;
+//Extuction Phase
+function test(a){
+  //Declaration Phase
+  let num1;
+  //Excution Phase
+  let num1 =21;
+  Error : add is not defined;
+}
 ```
 
 12.
@@ -259,4 +349,19 @@ function add(a, b) {
 
 ```js
 // Your code goes here
+
+//Declaration Phase
+function test(a){}
+let sum;
+function add(a,b){
+  return a+b;
+}
+//Exction Phase
+function test (a){
+  //Declaration Phase
+  let num1;
+  //Extuction phase
+  let num1 =21;
+  undefined;
+   }
 ```
