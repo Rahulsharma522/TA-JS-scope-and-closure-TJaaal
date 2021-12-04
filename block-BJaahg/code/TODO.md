@@ -10,9 +10,9 @@ const lastName = 'Stark';
 var knownAs = 'no one';
 
 console.log(
-  window.firstName,
-  window.lastName,
-  window.knownAs
+  window.firstName, //undefined
+  window.lastName,//undefined
+  window.knownAs // 'no one'
 );
 ```
 
@@ -27,7 +27,7 @@ function fullName(a, b) {
   return a + b;
 }
 
-console.log(window.fullName(firstName, lastName));
+console.log(window.fullName(firstName, lastName));// 'Arya Stark'
 ```
 
 3. Make a Execution Context Diagram for the following JS and write the output.
@@ -95,7 +95,7 @@ function isAwesome() {
   }
   console.log(awesome);
 }
-isAwesome();
+isAwesome();//undefined
 ```
 
 9. What will be the output of the following
@@ -108,7 +108,7 @@ function isAwesome() {
   }
   console.log(awesome);
 }
-isAwesome();
+isAwesome();//True
 ```
 
 10. What will be the output of the following
@@ -121,7 +121,7 @@ function isAwesome() {
   }
   console.log(awesome);
 }
-isAwesome();
+isAwesome();//undefined
 ```
 
 11. What will be the output of the following
@@ -135,7 +135,7 @@ function fullName(a, b) {
   return a + b;
 }
 const name = fullName(firstName, lastName);
-console.log(name);
+console.log(name);//'Arya Stark'
 ```
 
 12. Guess the output of the code below with a reason.
@@ -146,7 +146,7 @@ function sayHello() {
 }
 sayHello();
 
-console.log(name);
+console.log(name);//'Arya Stark'
 ```
 
 13. Guess the output of the code below with a reason.
@@ -155,7 +155,7 @@ console.log(name);
 if (true) {
   var name = 'Arya Stark';
 }
-console.log(name);
+console.log(name);// undefined
 ```
 
 14. Guess the output of the code below with a reason.
@@ -164,24 +164,23 @@ console.log(name);
 if (true) {
   let name = 'Arya Stark';
 }
-console.log(name);
+console.log(name);//Arya Stark
 ```
 
 15. Guess the output of the code below with a reason.
 
 ```js
 for (var i = 0; i < 20; i++) {
-  //
+  
 }
-console.log(i);
+console.log(i); //20
 ```
 
 16. Guess the output of the code below with a reason.
 
 ```js
 for (let i = 0; i < 20; i++) {
-  //
-}
+  /
 console.log(i);
 ```
 
